@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu próprio desafio</title>
+    <style>
+        p {
+            font: normal 15pt arial;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Objetivo <br/>
+        Crie um programa em JavaScript que solicite ao usuário várias informações e, em seguida, manipule e exiba esses dados de diferentes maneiras.<br/>
+
+        <br/> Requisitos <br/>
+        Peça ao usuário para inserir seu nome completo.
+        Peça ao usuário para inserir sua idade.
+        Peça ao usuário para inserir seu endereço de e-mail.<br/>
+
+        <br/> Tarefas <br/>
+        Exibir o número total de caracteres no nome completo.
+        Exibir o nome completo em maiúsculas e minúsculas.
+        Verificar se o e-mail contém "@" e ".".
+        Criar uma saudação personalizada usando os dados fornecidos.
+    </p>
+
+    <script>
+        var nomecompleto = window.prompt ('Digite seu nome completo:')
+        var idade = window.prompt ('Digite sua idade:')
+        var email = window.prompt ('Digite seu email:')
+        document.write (`Seu nome possui ${nomecompleto.length} letras. <br>`)
+        document.write (`Seu nome em letra maiúscula: ${nomecompleto.toUpperCase()}.<br> `)
+        document.write (`Seu nome em letra minúscula: ${nomecompleto.toLowerCase()}.<br> `)
+        document.write(`Seu e-mail é válido: ${email.includes('@') && email.includes('.')}<br>`)
+        document.write(`Olá, ${nomecompleto}! Com ${idade} anos, você está apenas começando! <br>`)
+
+        
+    </script>
+</body>
+</html>
